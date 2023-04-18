@@ -13,8 +13,8 @@ class UsersTableSeeder extends Seeder
     public function run()
     {
         DB::table('users')->insert([
-            'name' => 'france-solar',
-            'email' => 'france-solar@france-solar.fr',
+            'name' => 'admin',
+            'email' => 'admin@france-solar.fr',
             'password' => bcrypt('password')
         ]);
     }
