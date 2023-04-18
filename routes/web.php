@@ -19,4 +19,4 @@ Route::get('/', function () {
 
 Auth::routes(['register' => false]);
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/tableau-de-bord', 'TableauDeBordController@index')->name('home');
