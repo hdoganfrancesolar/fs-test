@@ -17,5 +17,17 @@ class UsersTableSeeder extends Seeder
             'email' => 'admin@france-solar.fr',
             'password' => bcrypt('password')
         ]);
+
+        DB::table('users')->insert([
+            'name' => 'user1',
+            'email' => 'user1@france-solar.fr',
+            'password' => bcrypt('password')
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'user2',
+            'email' => 'user2@france-solar.fr',
+            'password' => bcrypt('password')
+        ]);
     }
 }
