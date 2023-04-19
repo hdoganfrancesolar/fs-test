@@ -7,7 +7,7 @@ use Illuminate\Support\Arr;
 
 class CitationService
 {
-    protected $baseUrl = 'http://zenquotes.io/api/';
+    protected $baseUrl = 'https://zenquotes.io/api/';
     protected $client;
 
     public function __construct()
