@@ -16,3 +16,7 @@ use Illuminate\Foundation\Inspiring;
 Artisan::command('inspire', function () {
     $this->comment(Inspiring::quote());
 })->describe('Display an inspiring quote');
+
+Artisan::command('citation', function (\App\Services\CitationService $citationService) {
+    $this->comment($citationService->getCitationDuJour());
+})->describe('La citation du jour!');
